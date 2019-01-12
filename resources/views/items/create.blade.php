@@ -1,6 +1,6 @@
-@extends('layauts.app')
+@extends('layouts.app')
 
-@section
+@section('content')
     <div class="search">
         <div class="row">
             <div class="text-center">
