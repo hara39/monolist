@@ -101,7 +101,7 @@ class User extends Authenticatable
         
         if ($exist)
         {
-            \DB::delete("DELETE FROM item_user WHERE user_id = ? AND type 'have'", [$this->id, $itemId]);
+            \DB::delete("DELETE FROM item_user WHERE user_id = ? AND item_id = ? AND type ='have'", [$this->id, $itemId]);
         }
         else
         {
