@@ -31,4 +31,4 @@ Route::group(['middlewere' => ['auth']], function() {
     Route::delete('have', 'ItemUserController@dont_have')->name('item_user.dont_have');
 });
 
-//Route::get('ranking/want', 'RnkingController@want')->name('ranking.want');
+Route::get('ranking/want', 'RankingController@want')->name('ranking.want');
